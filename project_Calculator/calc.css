@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+#block-page {
+    width: 300px;
+    height: 300px;
+    border: 1px solid blue;
+    box-shadow: 2px 4px black;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.range {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.answer {
+
+}
+
+.operation {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.range-operation {
+    position: relative;
+    top: 20px;
+}
+
+.range-number {
+    position: relative;
+    top: 40px;
+}
+
+input {
+    height: 50px;
+}
+
+.range-number button {
+    border-radius: 50%;
+    color: #021b02;
+    background-color: lightgrey;
+}
