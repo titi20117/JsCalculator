@@ -6,12 +6,13 @@ body {
 
 #block-page {
     width: 300px;
-    height: 300px;
-    border: 1px solid blue;
-    box-shadow: 2px 4px black;
+    height: 500px;
+    border: none;
+    /* box-shadow: 2px 4px black; */
     position: absolute;
     left: 20%;
     top: 10%;
+    background-color: #021b02
 }
 
 .range {
@@ -28,6 +29,15 @@ body {
     height: 50px;
     font-size: 20px;
     font-weight: bolder;
+    margin: 5px;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition:  background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; 
+}
+
+.operation:hover {
+    background-color: crimson;
 }
 
 .range-operation {
@@ -37,7 +47,7 @@ body {
 
 .range-number {
     position: relative;
-    top: 40px;
+    top: 100px;
 }
 
 input {

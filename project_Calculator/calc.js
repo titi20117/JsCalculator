@@ -10,7 +10,6 @@ var oldNum = "";
 var  answerNum;
 var operatorForCalcul;
 
-// function setCurrentNumber(params){
     for (var i = 0, l = nums.length; i < l; i++) {
         var valueNums;
         nums[i].addEventListener('click', function(){
@@ -22,20 +21,13 @@ var operatorForCalcul;
                 currentNum = currentNum + valueNums;
                 console.log(currentNum);
                 response.setAttribute("value", currentNum);
-                // answerNum = response.getAttribute("value");
-                // console.log(answerNum);
 
             }
         })
         
-    }  
-// }
+    } 
 
  
-//method with operation
-// function mathoperation(params){
-    // setCurrentNumber(nums);
-    // console.log(answerNum);
     for (var i = 0; i < mathOps.length; i++) {
         mathOps[i].addEventListener('click', function() {
             console.log('ans: ' + currentNum);
@@ -44,7 +36,7 @@ var operatorForCalcul;
             oldNum = currentNum;
             currentNum = "";
             operatorForCalcul = this.getAttribute("id");
-            response.setAttribute("value", "");
+            response.setAttribute("value", oldNum);
             console.log("oldNum = " + oldNum);
             console.log("....................");
             console.log("currentNum = " + currentNum);
@@ -52,7 +44,7 @@ var operatorForCalcul;
         
     }
     
-// function solutionEgal() {
+
     var buttonEgal = document.getElementById("button-equal");
     buttonEgal.addEventListener("click", function(){
         console.log(currentNum);
@@ -60,8 +52,6 @@ var operatorForCalcul;
         response.setAttribute("value", currentNum);
         console.log(answerNum);
     })
-    // return answerNum;
-// }
 
 function calculator(params1) {
     oldNum = parseFloat(oldNum);
