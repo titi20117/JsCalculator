@@ -6,13 +6,29 @@ body {
 
 #block-page {
     width: 300px;
-    height: 500px;
+    height: 536px;
+    padding: 5px;
     border: none;
-    /* box-shadow: 2px 4px black; */
     position: absolute;
     left: 20%;
     top: 10%;
-    background-color: #021b02
+    background-color: black;
+}
+
+#button-equal {
+    background-color: rgb(209, 139, 9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition:  background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#button-equal:hover {
+    color: white;
+    background-color: rgb(204, 175, 121);
 }
 
 .range {
@@ -20,8 +36,19 @@ body {
     margin-top: 5px;
 }
 
-.answer {
+.operation-special {
+    background-color: rgb(206, 202, 196);
+    color: rgb(8, 5, 5);
+    border: none;
+    border-radius: 50%;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition:  background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
 
+.operation-special:hover {
+    background-color: white;
 }
 
 .operation {
@@ -30,14 +57,18 @@ body {
     font-size: 20px;
     font-weight: bolder;
     margin: 5px;
+}
+
+.operation-number {
     -webkit-transition: background-color 2s ease-out;
     -moz-transition:  background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
     transition: background-color 2s ease-out; 
 }
 
-.operation:hover {
-    background-color: crimson;
+.operation-number:hover {
+    background-color: rgb(36, 30, 31);
+    color: white;
 }
 
 .range-operation {
@@ -52,10 +83,39 @@ body {
 
 input {
     height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .range-number button {
     border-radius: 50%;
-    color: #021b02;
-    background-color: lightgrey;
+    color: rgb(206, 202, 196);
+    background-color: #565353;
+    border: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+.operation-ops {
+    background-color: rgb(209, 139, 9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition:  background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+.operation-ops:focus {
+    color: rgb(209, 139, 9);
+    background-color: white;
 }
